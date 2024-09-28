@@ -26,10 +26,6 @@ def getMovies(params: Annotated[PageParams, Query()]):
 
 def getMovie(params: Annotated[MovieId, Query()]):
 
-    print(params.id)
-
-
-
     for item in data:
         if json.loads(item.page_content)['id'] == params.id:
             return json.loads(item.page_content)

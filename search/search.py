@@ -3,7 +3,6 @@ from typing import Annotated
 from fastapi import Query
 from pydantic import BaseModel, Field
 from .setup import vector_store
-from .setup import data
 
 
 class SearchParams(BaseModel):
